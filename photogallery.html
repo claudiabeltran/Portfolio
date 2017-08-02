@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Page Title</title>
+    </head>
+    <body onload = "loadimage()">
+    
+        <h1>Photo Gallery</h1>
+        
+        <img id = "pics" src = "URL">
+        <br>
+        
+        <button id = "left" onclick = "left()">Left</button>
+        <button id = "right" onclick = "right()">Right</button>
+           
+    </body>
+</html>
+Raw
+ script.js
+var imgindex = 0;
+
+var images = ["https://s-media-cache-ak0.pinimg.com/736x/86/cc/4a/86cc4a2f30c175f70dd77489e5f34d39--happy-puppy-puppy-love.jpg", "http://cdn.akc.org/Marketplace/Breeds/Golden_Retriever_SERP.jpg", "https://s-media-cache-ak0.pinimg.com/originals/2b/1c/84/2b1c84d0dbfa6512f08aada345c6958c.jpg"];
+
+function loadimage(){
+    document.getElementById("pics").src = images[imgindex];
+}
+
+function left(){
+    imgindex--;
+    
+    if(imgindex < 0){
+    imgindex = 2;
+    }
+    loadimage();
+    document.getElementById("demo").innerHTML = imgindex;
+    
+    
+}
+
+function right(){
+    imgindex--;
+
+    if(imgindex < 0){
+    imgindex = 2;
+    }
+    loadimage();
+    document.getElementById("demo").innerHTML = imgindex;
+    
+    
+}
+
+    
+
+
+Raw
+ styles.css
+body{
+    
+    text-align: center;
+    background-color:  #99d6ff;
+}
+ 
+h1 {
+
+	font-family: Papyrus, fantasy;
+    font-size: 50px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+    
+}
+    
+button{
+margin-left: 50px;
+margin-right: 50px;
+}
+
+img{
+
+height: 250px;
+width: 300px;
+}
