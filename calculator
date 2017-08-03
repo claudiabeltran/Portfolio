@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+    <h1>Simple Calculator</h1>
+        <table>
+        <tr><input type =
+            "text" id = "num"
+            ></tr>
+            <tr>
+            <td><button onclick =
+                "seven()">7</button></td>
+            <td><button onclick =
+                "eight()">8</button></td>
+            <td><button onclick =
+                "nine()">9</button></td>
+            <td><button onclick =
+                "add()">+</button></td>
+                
+            </tr>
+        
+            <tr>
+            <td><button onclick =
+                "four()">4</button></td>
+                <td><button onclick =
+                "five()">5</button></td>
+                <td><button onclick =
+                "six()">6</button></td>
+                <td><button onclick =
+                "minus()">-</button></td>
+            </tr>
+            
+             <tr>
+            <td><button onclick =
+                "three()">3</button></td>
+                <td><button onclick =
+                "two()">2</button></td>
+                <td><button onclick =
+                "one()">1</button></td>
+                <td><button onclick =
+                "multiply()">*</button></td>
+            </tr>
+            
+             <tr>
+            <td><button onclick =
+                "zero()">0</button></td>
+                <td><button onclick =
+                "point()">.</button></td>
+                <td><button onclick =
+                "erase()">Clear</button></td>
+                <td><button onclick =
+                "divide()">/</button></td>
+            </tr>
+            
+             <tr>
+            <td><button onclick = 
+                "equals()">=</button></td>
+            </tr>
+        </table>
+</body>
+</html>
+Raw
+ script.js
+function seven(){
+    document.getElementById
+        ("num").value += 7;
+    
+}
+
+function eight(){
+    document.getElementById
+        ("num").value += 8;
+    
+}
+
+function nine(){
+    document.getElementById
+        ("num").value += 9;
+    
+}
+
+function add(){
+    document.getElementById
+        ("num").value += "+";
+    
+}
+function four(){
+    document.getElementById
+        ("num").value += 4;
+    
+}
+function five(){
+    document.getElementById
+        ("num").value += 5;
+    
+}
+function six(){
+    document.getElementById
+        ("num").value += 6;
+    
+}
+function minus(){
+    document.getElementById
+        ("num").value += "-";
+    
+}
+function three(){
+    document.getElementById
+        ("num").value += 3;
+    
+}
+function two(){
+    document.getElementById
+        ("num").value += 2;
+    
+}
+function one(){
+    document.getElementById
+        ("num").value += 1;
+    
+}
+function multiply(){
+    document.getElementById
+        ("num").value += "*";
+    
+}
+function zero(){
+    document.getElementById
+        ("num").value += 0;
+    
+}
+function point(){
+    document.getElementById
+        ("num").value += ".";
+    
+}
+function erase(){
+    document.getElementById
+        ("num").value = "";
+    
+}
+function divide(){
+    document.getElementById
+        ("num").value += "/";
+    
+}
+function equals(){
+    document.getElementById
+        ("num").value = eval
+        (document
+        .getElementById("num").value);
+    
+}
+Raw
+ styles.css
+body{
+    font-family:Comic Sans Ms;
+}
+h1 {
+    
+    color: #ffb3d9;
+     
+}
+
+table{
+    text-align: center;
+    border:2px solid ;
+    border-color: #ffb3d9;
+
+}
+button{
+    background-color: #b3ffff;
+}
+input{
+    background-color:#b3ffff;
+}
